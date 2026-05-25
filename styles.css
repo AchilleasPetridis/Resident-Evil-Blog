@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c0042;
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* header styling */
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #09001c;
+}
+
+main {
+    text-align: center;
+}
+.main-title {
+    text-align: center;
+    font-family: Plak Black Extra Condensed;
+}
+
+.game-description {
+    text-align: center;
+}
+
+/* nav menu styling */
+
+#quick-access-menu li {
+    list-style: none;
+    line-height: 2.5;
+}
+
+#quick-access-menu a {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#quick-access-menu a::after {
+    content: ">";
+}
+
+#quick-access-menu a:visited {
+    text-decoration: none;
+}
+
+#quick-access-menu a:active {
+    text-decoration: none;
+    border: 1px dotted #c49806;
+}
+
+#quick-access-menu a:hover {
+    text-decoration: none;
+    box-shadow: 0 0 5px #c49806;
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* main styling */
+main {
+    margin-top: 200px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-gap: 30px;
+}
+
+.game-photos {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 8px;
+}
+
+.game-info-par>p {
+    text-align: left;
+}
+
+.game-info-par {
+    display: grid;
+    grid-template-rows: 17% 1fr 15%;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+
+h2 {
+    font-family: Plak /Black Extra Condensed;
+}
+
+p {
+    line-height: 1.5;
+}
+
+#home {
+    margin: 0 2%;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+/* Responsive for buttons */
+
+#quick-access-container {
+    transform: translateX(-110%);
+    position: fixed;
+    background-color: gray;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding: 12px;
+    height: 100%;
+    width: 25%;
+}
+
+#quick-access-container.show {
+
+    transform: translateX(0);
+    
+}
+
+#quick-access-btn {
+    cursor: pointer;
+    z-index: 999;
+    position: fixed;
+    top: 8px;
+    left: 5px;
+}
+
+#quick-access-btn.show {
+    background-color: gray;
+}
+
+
+/* Image styling */
+
+.game-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+@media (max-width: 1370px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+    #quick-access-container {
+        width: 70%;
+        max-width: 300px;
+        overflow-y: auto;
+    }
+    .game-info-par {
+        display: block;
+    }
+    .game-info-par > p {
+        padding: 0 15px;
+    }
+    .game-info-par > p {
+        text-align: center;
+    }
+}
+
+
+
+
